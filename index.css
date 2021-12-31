@@ -1,20 +1,24 @@
-:root{
-    --color-green: rgb(58,69,31);
-    --color-brown: rgb(172,146,117);
+:root {
+    --color-green: rgb(58, 69, 31);
+    --color-brown: rgb(172, 146, 117);
     --color-brown-90: hsla(32, 25%, 57%, 0.9);
-    --color-brown-dark: rgb(100,72,42);
+    --color-brown-dark: rgb(100, 72, 42);
     --color-terracota: rgb(200, 174, 104);
 }
-.bg-main-banner{
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+.bg-main-banner {
     background-image: url(./assets/images/bg-main-banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;  
+    height: 100vh;
     padding-right: 5%;
 }
 
-.content{
+.content {
     background-color: var(--color-brown-90);
     padding: 1.5rem 1.2rem;
     color: white;
@@ -22,35 +26,48 @@
     font-size: 1.4em;
 }
 
-.btn{
+.btn {
     border-radius: 0;
     border: none;
     font-weight: bold;
     padding: 0.5em 1em;
 }
-.btn-primary{
-    background-color: var(--color-green) ;
-}
-.btn-up{
-    margin-top: -20px;
-}
-.object-fit{
-    object-fit: cover;
-}
-.bg-terracota{
-    background-color: var(--color-terracota);
-}
-.img-up{
-    margin-top: -50px;
+
+.btn-primary {
+    background-color: var(--color-green);
 }
 
-.big-border-white{
+.btn-up {
+    margin-top: -20px;
+}
+
+.object-fit {
+    object-fit: cover;
+}
+
+.bg-terracota {
+    background-color: var(--color-terracota);
+}
+
+.img-up {
+    margin-top: -80px;
+}
+
+.big-border-white {
     border: 1em solid white;
 }
-.h-45{
+
+.h-45 {
     height: 45%;
 }
-.card-terracota{
+
+.box-bg{
+    position: absolute;
+    background-color: var(--color-terracota);
+    z-index: -1;
+}
+
+.card-terracota {
     background-color: var(--color-terracota);
     color: var(--color-brown-dark);
     padding: 1em;
@@ -59,4 +76,16 @@
     align-items: center;
     text-align: center;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-main-banner {
+        background-position-x: -200px;
+    }
+    .img-fluid{
+        width: 100%;
+    }
+    .w-phone-100{
+        width: 100%;
+    }
 }
