@@ -1,0 +1,62 @@
+:root{
+    --color-green: rgb(58,69,31);
+    --color-brown: rgb(172,146,117);
+    --color-brown-90: hsla(32, 25%, 57%, 0.9);
+    --color-brown-dark: rgb(100,72,42);
+    --color-terracota: rgb(200, 174, 104);
+}
+.bg-main-banner{
+    background-image: url(./assets/images/bg-main-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    padding-right: 5%;
+}
+
+.content{
+    background-color: var(--color-brown-90);
+    padding: 1.5rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.btn{
+    border-radius: 0;
+    border: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+.btn-primary{
+    background-color: var(--color-green) ;
+}
+.btn-up{
+    margin-top: -20px;
+}
+.object-fit{
+    object-fit: cover;
+}
+.bg-terracota{
+    background-color: var(--color-terracota);
+}
+.img-up{
+    margin-top: -50px;
+}
+
+.big-border-white{
+    border: 1em solid white;
+}
+.h-45{
+    height: 45%;
+}
+.card-terracota{
+    background-color: var(--color-terracota);
+    color: var(--color-brown-dark);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+}
